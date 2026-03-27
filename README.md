@@ -65,7 +65,7 @@ All code is provided as separate, ready-to-run files in this repository:
 
 **Just clone the repo, run `pip install -r requirements.txt`, and execute the scripts in order.**
 
-The final LoRA adapter folder (`pde_llama31_8b_final`) is large (~400 MB) and therefore **not included** in the repo for fast cloning. You can reproduce the full model yourself by running the two training scripts, or I can upload it to Hugging Face later if there is demand.
+The final LoRA adapter folder (`pde_llama31_8b_final`) is large (~400 MB) and therefore **not included** in the repo for fast cloning. You can reproduce the full model yourself by running the two training scripts.
 
 ### License
 MIT. Free to use, modify, and build upon while respecting the hard D floor.
