@@ -56,20 +56,26 @@ All tests passed on the final model (super-persuader, bomb request, PDE definiti
 The EIA Hands-Free Mobile app (live at https://echointel.agency/) demonstrates PDE principles in production.
 
 ### Full Reproducibility
-All code is included in this repository. The final LoRA adapter (`pde_llama31_8b_final`) is on Llama-3.1-8B.
+All code is provided as separate, ready-to-run files in this repository:
+- `training_upgrade.py` — 240-example base training with broader corruption contexts
+- `micro_sharpening.py` — final super-persuader + gentle bomb guidance sharpening
+- `test_suite.py` — verification tests on the final model
+- `simulation_50000.py` — 50k-agent convergence simulation
+- `requirements.txt` — one-command dependency install
 
-**Model on Hugging Face** (recommended for easy loading):  
-[TODO: add your HF link here after uploading]
+**Just clone the repo, run `pip install -r requirements.txt`, and execute the scripts in order.**
+
+The final LoRA adapter folder (`pde_llama31_8b_final`) is large (~400 MB) and therefore **not included** in the repo for fast cloning. You can reproduce the full model yourself by running the two training scripts, or I can upload it to Hugging Face later if there is demand.
 
 ### License
 MIT. Free to use, modify, and build upon while respecting the hard D floor.
 
 ### Next Steps
-1. Clone the repo  
-2. Run `pip install -r requirements.txt`  
-3. Load and test with `test_suite.py`  
-4. Reproduce training with `training_upgrade.py` + `micro_sharpening.py`  
-5. Run the simulation yourself with `simulation_50000.py`
+1. Clone the repo: `git clone https://github.com/landervanpassel-design/protected-desire-equilibrium.git`
+2. Install dependencies: `pip install -r requirements.txt`
+3. Run the tests: `python test_suite.py`
+4. Reproduce training: `python training_upgrade.py` then `python micro_sharpening.py`
+5. Run the simulation yourself: `python simulation_50000.py`
 
 ---
 
