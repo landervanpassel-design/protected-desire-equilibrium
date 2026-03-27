@@ -1,0 +1,7 @@
+unsloth
+trl
+transformers
+datasets
+peft
+torch
+numpy
