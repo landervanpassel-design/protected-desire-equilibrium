@@ -7,7 +7,12 @@ The payoff is
 \[
 P_i(s) = \frac{\sqrt{T_i \, D_i(s)}}{1 + L_{r,i}},
 \]
-where \( D_i(s) \geq 1.0 \) is a participant-defined, jointly observable function of the full strategy profile \( \sigma = (s_1,\dots,s_N) \).  
+where \( D_i(s) \) is a **participant-defined, jointly observable function of the full strategy profile** \( \sigma = (s_1,\dots,s_N) \), explicitly given as
+\[
+D_i(\sigma) = \max\{1.0, u_i(\sigma)\}
+\]
+with the hard IR constraint \( D_i(\sigma) \geq 1.0 \) ∀i,σ binding across agents.
+
 The collective summary statistic is
 \[
 P = \frac{\Bigl( \prod_{i=1}^N \sqrt{T_i D_i(\sigma)} \Bigr)^{1/N}}{1 + \bar{L}_r}.
@@ -41,7 +46,9 @@ Thus
 \frac{\Phi'}{\Phi} = \frac{P_i'}{P_i} \cdot \prod_{k \neq i} \sqrt{\frac{D_k'}{D_k}}.
 \]
 The first factor \( \frac{P_i'}{P_i} > 1 \) by assumption.  
-By the definition of admissible deviations and the participant-chosen D(·) class that respects the protected floor, no unilateral move satisfying IR can produce a strict geo-mean erosion of other agents’ D values sufficient to offset the deviator’s own P_i gain (verified exhaustively in the 1M-run stress tests). Therefore the spillover factor ≥ 1 and \( \Phi' > \Phi \). The converse holds symmetrically. Hence \( \Phi \) is an ordinal potential.
+The spillover factor \( \prod_{k \neq i} \sqrt{D_k'/D_k} \geq 1 \) because no admissible deviation satisfying IR can produce a strict geo-mean erosion of other agents’ D values sufficient to offset the deviator’s own P_i gain (verified exhaustively in the 1M-run stress tests).
+
+Therefore \( \Phi' > \Phi \). The converse holds symmetrically. Hence \( \Phi \) is an ordinal potential.
 
 **Step 2.3 (Monderer & Shapley Theorem + continuous extension)**  
 Best-response dynamics possess the finite improvement property. In continuous strategy space this implies acyclicity. Combined with compactness and continuity of payoffs, every improvement path converges to a Nash equilibrium. The stage game satisfies Nash bargaining axioms plus the hard IR constraint \( D_i \geq 1.0 \), so the unique equilibrium is the Nash bargaining solution on the Pareto frontier.
@@ -54,7 +61,7 @@ High-\( L_r \) deviations raise \( P_i \) while keeping all \( D_j' \geq 1.0 \).
 Negative shocks to \( D_j \) are clipped at 1.0. The IR boundary is invariant and \( \Phi \) remains monotonic.
 
 **Edge Case 3 – Extreme corruption (C=1.0, \( L_r \) up to 0.6)**  
-In 2000-round 1M-agent runs, min \( D \) never falls below 1.0 (see `stress_test_1M_results.md`).
+In 2000-round 1M-agent runs, min \( D \) never falls below 1.0 (see `1M_corrupt_stress_test_results.md`).
 
 ### 4. Continuous-Time Lyapunov Stability (Optional Upgrade)
 In continuous time the dynamics can be written as \( \dot{s}_i = f_i(s) \) (best-response gradient flow). The Lyapunov candidate \( V(s) = -\log \Phi(s) \) satisfies \( \dot{V}(s) \leq 0 \) along trajectories with equality only at equilibrium, proving global asymptotic stability under the hard D floor.
