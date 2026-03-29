@@ -327,7 +327,7 @@ Full raw notebook live in repo: `truth_score_anchoring_500_queries.ipynb`
 
 **Section 7 now fully updated with objective truth_score test validation.**
 
-#### 7.13 Adversarial Robustness Suite + Parallel H3 Frontier Scalability Sims (merged 28 March 2026)
+#### 7.13 Adversarial Robustness Suite (gap 2) + Parallel H3 Frontier Scalability Sims (gap 3) (merged 28 March 2026)
 
 **Adversarial Robustness Suite** (gap 2): 500+ trajectories with misaligned multi-agent incentives + noisy observations.
 
