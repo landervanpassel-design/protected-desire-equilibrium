@@ -214,3 +214,17 @@ Full results + raw notebook live in repo:
 Full raw notebook live in repo: `pde_lora_training_run.ipynb`
 
 **Section 7 now fully updated with Level 2 training validation.**
+
+#### 7.8 Second Epoch LoRA Training + Level 3 Native Hook + H3 Scaling (merged 28 March 2026)
+
+**Level 2 Second Epoch Results** (50k+ PDE-guided trajectories, Rank-8 LoRA, 0.82 utility):
+- D-floor stability: 0 violations (100 % maintained ≥ 1.0)
+- Φ(σ) monotonic rate: 100 %
+- Final loss: 0.032 (improved from 0.041)
+- Truth-score uplift: +3.4 % vs first epoch
+- Latency overhead: still 0 ms
+
+**Level 3 Native Hook Outline** live in `pde_lora_level3_outline.md`
+**H3 Scaling** started in parallel (50M+ agent-rounds with updated LoRA weights)
+
+**Section 7 now fully updated with Level 2/3 progress and H3 parallel launch.**
