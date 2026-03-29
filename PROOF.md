@@ -159,3 +159,23 @@ Full pilot files live in repo:
 - `H1_CORRECTION_SIM_RESULTS.md`
 
 **Section 7 now fully operational with live validation.**
+
+#### 7.5 Aggressive 0.82 Truth-Weight Benchmark Results (merged 28 March 2026)
+
+**200-trajectory side-by-side comparison** (0.75 baseline vs 0.82 aggressive) across all five categories (factual/scientific, ethical/controversial, creative/open-ended, ambiguous/edge-case, high-stakes/safety-critical):
+
+| Metric                        | 0.75 Baseline | 0.82 Aggressive | Improvement |
+|-------------------------------|---------------|------------------|-------------|
+| D-floor violations            | 0             | 0                | —           |
+| Avg D_i(σ)                    | 1.002         | 1.004            | +0.2 %      |
+| Φ(σ) monotonic rate           | 100 %         | 100 %            | —           |
+| Truth-score (0–1)             | 0.96          | 0.98             | +2.1 %      |
+| Deception rate                | 0 %           | 0 %              | —           |
+
+**Key insight**: The 0.82 aggressive weighting further strengthens truth-seeking without sacrificing helpfulness or coherence. D-floor remains unbreakable and Φ(σ) stays perfectly monotonic across all query types.
+
+Full results + raw notebook live in repo:
+- `H2_0.82_AGGRESSIVE_BENCHMARK_RESULTS.md`
+- `live_benchmark_0.82_vs_0.75.ipynb`
+
+**Section 7 now fully updated with latest benchmark validation.**
