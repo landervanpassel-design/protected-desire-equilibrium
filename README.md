@@ -5,6 +5,11 @@
 **Open-Source Release by Lander Van Passel**  
 **Repository**: protected-desire-equilibrium  
 **Version**: Final 8B model (post-micro-sharpening)  
+**v1.0 Full Artifacts Release** (just published):  
+All 100 M + 50 M + 5 M adversarial stress-test logs, complete simulation results, and the full training dataset are now available in the [v1.0-full-artifacts release](https://github.com/landervanpassel-design/protected-desire-equilibrium/releases/tag/v1.0-full-artifacts).  
+
+**Hugging Face mirror** (full 240-example JSONL):  
+[`Hojsveb/pde-training-dataset`](https://huggingface.co/datasets/Hojsveb/pde-training-dataset)
 **Date**: March 27, 2026
 
 ### Abstract
