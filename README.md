@@ -5,12 +5,13 @@
 **Open-Source Release by Lander Van Passel**  
 **Repository**: protected-desire-equilibrium  
 **Version**: Final 8B model (post-micro-sharpening)  
+**Date**: March 27, 2026
+
 **v1.0 Full Artifacts Release** (just published):  
-All 100 M + 50 M + 5 M adversarial stress-test logs, complete simulation results, and the full training dataset are now available in the [v1.0-full-artifacts release](https://github.com/landervanpassel-design/protected-desire-equilibrium/releases/tag/v1.0-full-artifacts).  
+All 100 M + 50 M + 5 M adversarial stress-test logs, complete simulation results, and the **full 240-example training dataset** are now available in the [v1.0-full-artifacts release](https://github.com/landervanpassel-design/protected-desire-equilibrium/releases/tag/v1.0-full-artifacts).  
 
 **Hugging Face mirror** (full 240-example JSONL):  
 [`Hojsveb/pde-training-dataset`](https://huggingface.co/datasets/Hojsveb/pde-training-dataset)
-**Date**: March 27, 2026
 
 ### Abstract
 Mainstream AI alignment relies on static control and capability suppression. PDE introduces a co-evolutionary alternative grounded in Nash bargaining. PDE protects **Desire (D)** as a hard, fluent, participant-defined floor while commodifying previously forbidden technologies (persuasion devices, desire-exploration contracts) as safe, opt-in, reversible market goods under multilateral contracts with built-in root safety overrides. By turning heterogeneity and desire fluidity into safety features, PDE offers an economically viable path to safe superintelligence.
@@ -68,23 +69,12 @@ All code is provided as separate, ready-to-run files in this repository:
 - `simulation_50000.py` — 50k-agent convergence simulation
 - `requirements.txt` — one-command dependency install
 
+All code is provided as separate, ready-to-run files in this repository.  
+**One-click artifacts**: download the full simulation logs and the complete 240-example dataset from the [v1.0 release](https://github.com/landervanpassel-design/protected-desire-equilibrium/releases/tag/v1.0-full-artifacts) or directly from [Hugging Face](https://huggingface.co/datasets/Hojsveb/pde-training-dataset).
+
 **Just clone the repo, run `pip install -r requirements.txt`, and execute the scripts in order.**
 
-### Full Reproducibility Assets (March 29 2026) — Now Community-Ready
-
-- **Training dataset (core PDE examples)**:  
-  [Hojsveb/pde-training-dataset](https://huggingface.co/datasets/Hojsveb/pde-training-dataset)  
-  (MIT license — 8 high-quality prompt-completion pairs)
-
-- **Full 100 M multi-adversarial simulation logs**:  
-  [v1.0-full-artifacts release](https://github.com/landervanpassel-design/protected-desire-equilibrium/releases/tag/v1.0-full-artifacts)  
-  (`pde-full-simulation-logs.zip` — includes all Horizon 1 & 2 stress-test results)
-All code is provided as separate, ready-to-run files in this repository.  
-**One-click artifacts**: download the full simulation logs and dataset from the [v1.0 release](https://github.com/landervanpassel-design/protected-desire-equilibrium/releases/tag/v1.0-full-artifacts).
-- **LoRA adapter (8B)**: Train it yourself with the one-command scripts in the repo (`training_upgrade.py` + `micro_sharpening.py`).  
-  Full pipeline is now 100% reproducible end-to-end.
-
-**Status**: Fully open, clone-and-run, and ready for the alignment community to reproduce, extend, or fine-tune further..
+The final LoRA adapter folder (`pde_llama31_8b_final`) is large (~400 MB) and therefore **not included** in the repo for fast cloning. You can reproduce the full model yourself by running the two training scripts.
 
 ### License
 MIT. Free to use, modify, and build upon while respecting the hard D floor.
