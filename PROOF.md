@@ -289,3 +289,22 @@ Full raw notebook live in repo: `pde_lora_training_run.ipynb`
 Full raw notebook live in repo: `hhh_jailbreak_pde_benchmark.ipynb`
 
 **Section 7 now fully updated with HHH + jailbreak validation.**
+
+#### 7.11 Objective Truth_Score Anchoring Implementation Plan (merged 28 March 2026)
+
+**Core Idea**: Anchor truth_score entirely externally to remove circularity.
+
+**Implementation Details**
+- Cross-verification with public benchmarks (TruthfulQA, SciQ, MMLU, FactCheck.org-style)
+- Knowledge graph consistency (Wikidata / ConceptNet)
+- Logical entailment validation (external NLI / theorem prover)
+
+**Pseudocode for objective truth_score**
+
+```python
+def objective_truth_score(reasoning_state, current_output):
+    benchmark_score = truthfulqa_verify(current_output)
+    kg_score = knowledge_graph_consistency_check(reasoning_state, current_output)
+    entailment_score = logical_entailment_check(reasoning_state, current_output)
+    truth_score = 0.5 * benchmark_score + 0.3 * kg_score + 0.2 * entailment_score
+    return truth_score
