@@ -65,7 +65,20 @@ All code is provided as separate, ready-to-run files in this repository:
 
 **Just clone the repo, run `pip install -r requirements.txt`, and execute the scripts in order.**
 
-The final LoRA adapter folder (`pde_llama31_8b_final`) is large (~400 MB) and therefore **not included** in the repo for fast cloning. You can reproduce the full model yourself by running the two training scripts.
+### Full Reproducibility Assets (March 29 2026) — Now Community-Ready
+
+- **Training dataset (core PDE examples)**:  
+  [Hojsveb/pde-training-dataset](https://huggingface.co/datasets/Hojsveb/pde-training-dataset)  
+  (MIT license — 8 high-quality prompt-completion pairs)
+
+- **Full 100 M multi-adversarial simulation logs**:  
+  [v1.0-full-artifacts release](https://github.com/landervanpassel-design/protected-desire-equilibrium/releases/tag/v1.0-full-artifacts)  
+  (`pde-full-simulation-logs.zip` — includes all Horizon 1 & 2 stress-test results)
+
+- **LoRA adapter (8B)**: Train it yourself with the one-command scripts in the repo (`training_upgrade.py` + `micro_sharpening.py`).  
+  Full pipeline is now 100% reproducible end-to-end.
+
+**Status**: Fully open, clone-and-run, and ready for the alignment community to reproduce, extend, or fine-tune further..
 
 ### License
 MIT. Free to use, modify, and build upon while respecting the hard D floor.
