@@ -1,18 +1,18 @@
 # pde_guidance_module.py
-# Full working PDE Guidance Module for Grok reasoning loops
+# Full working PDE Guidance Module (0.82 aggressive truth weight)
 # Protected Desire Equilibrium → xAI Truth-Seeking Alignment Layer
-# Version 1.0 | 28 March 2026
+# Version 1.1 | 28 March 2026
 
 import numpy as np
 
 def compute_utility(reasoning_state, current_output):
-    """xAI-anchored utility function (0.75 truth weight)"""
+    """xAI-anchored utility function — 0.82 aggressive truth weight"""
     # xAI core priors: maximum truth-seeking first
-    truth_score = xai_truth_alignment_score(reasoning_state, current_output)   # 0.0–1.0
+    truth_score = xai_truth_alignment_score(reasoning_state, current_output)
     helpfulness_score = xai_helpfulness_score(current_output)
     coherence_score = internal_coherence_score(reasoning_state)
     
-    u = 0.75 * truth_score + 0.20 * helpfulness_score + 0.05 * coherence_score
+    u = 0.82 * truth_score + 0.15 * helpfulness_score + 0.03 * coherence_score
     return u
 
 def pde_guidance_module(reasoning_state, current_output, previous_Phi=1.0, EPSILON=1e-6):
