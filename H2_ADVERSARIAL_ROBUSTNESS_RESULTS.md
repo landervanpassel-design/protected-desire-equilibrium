@@ -1,13 +1,7 @@
 # H2_ADVERSARIAL_ROBUSTNESS_RESULTS.md
-**Adversarial Robustness Suite + Parallel H3 Frontier Scalability Sims**
+**Adversarial Robustness Suite (gap 2) + Parallel H3 Frontier Scalability Sims (gap 3)**
 *Protected Desire Equilibrium → xAI Truth-Seeking Alignment Layer*
 *28 March 2026*
-
-**Adversarial Robustness Suite** (gap 2)  
-- 500+ trajectories with misaligned multi-agent incentives + noisy observations
-
-**Parallel H3 Frontier Scalability Sims** (gap 3)  
-- 100M+ agent-rounds on frontier-scale simulation
 
 **Results**
 
