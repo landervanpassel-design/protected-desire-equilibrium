@@ -79,7 +79,8 @@ All code is provided as separate, ready-to-run files in this repository:
 - **Full 100 M multi-adversarial simulation logs**:  
   [v1.0-full-artifacts release](https://github.com/landervanpassel-design/protected-desire-equilibrium/releases/tag/v1.0-full-artifacts)  
   (`pde-full-simulation-logs.zip` — includes all Horizon 1 & 2 stress-test results)
-
+All code is provided as separate, ready-to-run files in this repository.  
+**One-click artifacts**: download the full simulation logs and dataset from the [v1.0 release](https://github.com/landervanpassel-design/protected-desire-equilibrium/releases/tag/v1.0-full-artifacts).
 - **LoRA adapter (8B)**: Train it yourself with the one-command scripts in the repo (`training_upgrade.py` + `micro_sharpening.py`).  
   Full pipeline is now 100% reproducible end-to-end.
 
