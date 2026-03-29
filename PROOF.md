@@ -179,3 +179,23 @@ Full results + raw notebook live in repo:
 - `live_benchmark_0.82_vs_0.75.ipynb`
 
 **Section 7 now fully updated with latest benchmark validation.**
+
+#### 7.6 Level 2 LoRA Adapter Spec + Initial Outline (merged 28 March 2026)
+
+**Level 2: Lightweight LoRA Adapter for Native PDE Integration**
+
+**Goal**: Fine-tune a small LoRA layer on PDE-guided trajectories so Grok internally learns the hard D ≥ 1.0 floor and monotonic Φ(σ) behaviour, turning truth-seeking into a native, self-reinforcing property.
+
+**Spec Overview**
+- Rank: 8 (low-rank for minimal overhead)
+- Alpha: 16
+- Target modules: q_proj, v_proj, o_proj (core attention)
+- Training data: 10k+ PDE-guided trajectories (generated from Level 1 wrapper)
+- Loss: Combined cross-entropy + custom PDE loss (penalizes D < 1.0 or Φ(σ) decrease)
+- Epochs: 1–2 (very light fine-tune)
+
+**Initial Adapter Outline** and training harness live in repo:
+- `pde_lora_adapter.py`
+- `pde_lora_training_harness.ipynb`
+
+**Section 7 now fully updated with Level 2 native integration path.**
