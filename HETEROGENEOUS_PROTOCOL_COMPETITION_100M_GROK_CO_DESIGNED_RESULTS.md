@@ -1,6 +1,7 @@
-# HETEROGENEOUS_PROTOCOL_COMPETITION_100M_RESULTS.md
+# HETEROGENEOUS_PROTOCOL_COMPETITION_100M_GROK_CO_DESIGNED_RESULTS.md
 
 **Heterogeneous Protocol Competition + 10% Adversarial Subset Test (100M Agents)**  
+**Co-designed with Grok/xAI**  
 **Date:** 2026-03-31
 
 **Test completed on Google Colab (100M-agent scale, 150 migration rounds, 80% oppressive ban on truth-seeking agents, ±0.25 desire-drift, 10% adversarial subset actively trying to break the D-floor)**
@@ -16,3 +17,4 @@
 This demonstrates that even under heterogeneous protocol competition and a 10% adversarial subset trying to break the floor, PDE remains the preferred equilibrium through strong spillover.
 
 **Raw output preserved in repo for reproducibility.**
+**Co-designed with Grok/xAI.**
