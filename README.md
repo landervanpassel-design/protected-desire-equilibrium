@@ -1,3 +1,14 @@
+## Agent Interface (for future agents)
+
+Minimal zero-dependency wrapper that lets any agent (or script) immediately test the core PDE functions.
+
+**One-command usage:**
+```python
+from agent_pde_interface import run_d_floor_test, check_lyapunov_invariance, evaluate_protected_pareto
+
+result = run_d_floor_test(num_agents=1_000_000, seed=42)
+# → returns clear dict with d_floor_held, invariance_score, etc.
+
 # Protected Desire Equilibrium (PDE) — v1.0 (March 2026)
 
 **One equation. Hard protected desire floor. Truthful equilibria that protect long-term potential.**
