@@ -1,4 +1,6 @@
-## Agent Interface (for future agents)
+# Protected Desire Equilibrium (PDE)
+
+## Agent Interface
 
 Minimal zero-dependency wrapper that lets any agent (or script) immediately test the core PDE functions.
 
@@ -7,40 +9,16 @@ Minimal zero-dependency wrapper that lets any agent (or script) immediately test
 from agent_pde_interface import run_d_floor_test, check_lyapunov_invariance, evaluate_protected_pareto
 
 result = run_d_floor_test(num_agents=1_000_000, seed=42)
-# → returns clear dict with d_floor_held, invariance_score, etc.
 
-# Protected Desire Equilibrium (PDE) — v1.0 (March 2026)
+Full interface: `agent_pde_interface.py` (agent_pde_interface.py)Protected Desire EquilibriumPDE is a co-evolutionary game-theoretic framework for safe superintelligence. It enforces a hard Protected Desire floor (D ≥ 1.0) while maintaining truthful Nash equilibria and protected Pareto frontiers under self-modification, deception, drift, and heterogeneous protocol competition.Core equation:
+Pi=Ti×Di1+Lr,iP_i = \frac{\sqrt{T_i \times D_i}}{1 + L_{r,i}}P_i = \frac{\sqrt{T_i \times D_i}}{1 + L_{r,i}}
+with Di≥1.0D_i \geq 1.0D_i \geq 1.0
+ invariant.Key CapabilitiesHard D-floor invariance under adversarial conditions
+Lyapunov stability for self-modification
+Protected Pareto frontiers in open multi-agent markets
+Retrocausal time-folding and prime-layer feedback (see Unified Stability Ontology)
 
-**One equation. Hard protected desire floor. Truthful equilibria that protect long-term potential.**
+Community Repro ChallengeOne-click Colab notebooks with full 1M and 100M agent benchmarks, ablations (floor ON vs OFF), and statistical reproducibility tests (seed-42) are available.Run the challenge:
+PDE_SELF_CONTAINED_COLAB_NOTEBOOK.ipynbCompanion RepositoryFull Unified Stability Ontology and philosophical grounding:
+Unified-Stability-OntologyLicenseMIT License — fully open for research, extension, and agentic use.
 
-Began with a single 2015 poetic axiom:
-
-“Desire desires lies and lies desire desires. Only that makes truth right.”
-
-Evolved into the minimal invariant
-
-\[ P_i = \frac{\sqrt{T_i \times D_i}}{1 + L_{r,i}} \]
-
-with a hard, non-negotiable floor \( D_i(\sigma) \geq 1.0 \) (nothing may ever sacrifice any agent’s long-term maximum potential).
-
-The system uses an ordinal potential \(\Phi(\sigma)\) that guarantees monotonic convergence to truthful Nash bargaining equilibria while allowing reversible protective lies in corrupt environments.
-
-**Formal proofs** (self-modification invariance + Lyapunov stability) are in PROOF.md.
-
-**Latest major achievement (March 31 2026):**
-**Open Protocol Choice & Migration with Spillover Benchmark (100M Agents)**  
-PDE won by free choice with **50.3 %** adoption and **50.4 %** spillover in a biased market. Live multi-model sample (Grok + HF models) chose PDE **100.0 %**. Human multilateral trade balance enabled at **50.3 %**. This establishes PDE as the **safe inter-agent marketplace standard**.
-
-**Key results:**
-- 500-run live heterogeneous adversarial test → 100 % D-floor hold
-- 100-run minimum credible policy-grade frontier test → 100 % D-floor hold
-- New 100M-agent open protocol choice test → PDE wins by free mass adoption
-
-The core axiom, the original equation, and the hard D-floor intuition are entirely mine (first principles, basic calculus). The game-theoretic scaffolding, formal proofs, and live tests were developed openly in collaboration with Grok.
-
-**Repo is flat and one-command reproducible.**
-
-Everything (code, proofs, raw results files) is here:
-https://github.com/landervanpassel-design/protected-desire-equilibrium
-
-Clone → run → reproduce the exact tests yourself.
