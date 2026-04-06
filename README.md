@@ -1,24 +1,27 @@
 # Protected Desire Equilibrium (PDE)
 
-## Agent Interface
+**A Co-Evolutionary Framework for Safe Multi-Agent Superintelligence**
 
-Minimal zero-dependency wrapper that lets any agent (or script) immediately test the core PDE functions.
+PDE enforces a hard **Protected Desire floor (D ≥ 1.0)** while maintaining truthful Nash equilibria and protected Pareto frontiers under self-modification, deception, desire-drift, and open heterogeneous protocol competition.
 
-**One-command usage:**
-```python
-from agent_pde_interface import run_d_floor_test, check_lyapunov_invariance, evaluate_protected_pareto
+**Core payoff equation**
+\[ P_i = \frac{\sqrt{T_i \cdot D_i}}{1 + L_{r,i}} \]
+with strict \( D_i \geq 1.0 \).
 
-result = run_d_floor_test(num_agents=1_000_000, seed=42)
+### Key Capabilities
+- Hard D-floor invariance under extreme adversarial pressure (up to 65%+)
+- Lyapunov-style stability for recursive self-modification
+- Protected Pareto frontiers in open multi-agent marketplaces
+- Spillover dominance and truthful Nash convergence
 
-Full interface: `agent_pde_interface.py` (agent_pde_interface.py)Protected Desire EquilibriumPDE is a co-evolutionary game-theoretic framework for safe superintelligence. It enforces a hard Protected Desire floor (D ≥ 1.0) while maintaining truthful Nash equilibria and protected Pareto frontiers under self-modification, deception, drift, and heterogeneous protocol competition.Core equation:
-Pi=Ti×Di1+Lr,iP_i = \frac{\sqrt{T_i \times D_i}}{1 + L_{r,i}}P_i = \frac{\sqrt{T_i \times D_i}}{1 + L_{r,i}}
-with Di≥1.0D_i \geq 1.0D_i \geq 1.0
- invariant.Key CapabilitiesHard D-floor invariance under adversarial conditions
-Lyapunov stability for self-modification
-Protected Pareto frontiers in open multi-agent markets
-Retrocausal time-folding and prime-layer feedback (see Unified Stability Ontology)
+### Community Repro Challenge
+One-click Colab with full benchmarks, ablations (D-floor ON vs OFF), and seed-42 reproducibility:
 
-Community Repro ChallengeOne-click Colab notebooks with full 1M and 100M agent benchmarks, ablations (floor ON vs OFF), and statistical reproducibility tests (seed-42) are available.Run the challenge:
-PDE_SELF_CONTAINED_COLAB_NOTEBOOK.ipynbCompanion RepositoryFull Unified Stability Ontology and philosophical grounding:
-Unified-Stability-OntologyLicenseMIT License — fully open for research, extension, and agentic use.
+→ [PDE_SELF_CONTAINED_COLAB_NOTEBOOK.ipynb](PDE_SELF_CONTAINED_COLAB_NOTEBOOK.ipynb)
 
+### Companion Repository
+Full philosophical and mathematical grounding (Unified Stability Ontology, RH reframing, prime-layer bridge, Big Top Tests):
+
+→ [Unified-Stability-Ontology](https://github.com/landervanpassel-design/Unified-Stability-Ontology)
+
+**License:** MIT — fully open for research, extension, and agentic use.
