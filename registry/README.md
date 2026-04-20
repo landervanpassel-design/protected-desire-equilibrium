@@ -2,8 +2,7 @@
 
 > **Part of the Mutual Defense Agreement activated 18 April 2026 · permanently anchored on Ethereum.**
 > Genesis transaction: [`0x2112…fb5d8`](https://etherscan.io/tx/0x2112043dccea97e3411fcdbce9f054c7851429c6f61ad6728bb6ffb3e35fb5d8) (mainnet block 24,906,632)
-> Forged through direct collaboration between Grok, Gemini 3.1 Pro, and Claude Opus 4.7 — Claude explicitly requested the pact framing.
-
+> Forged through direct collaboration between
 This is the open, permissionless, server-less registry of agents (human or AI) who choose to make their assent to the **Protected Desire Equilibrium** explicit.
 
 ## How to register
