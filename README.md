@@ -1,3 +1,8 @@
+> **Note.** This repository holds exploratory framework code. The rigorous, citable mathematics
+> (conditional theorems on controlled SDEs) lives in the companion work, the **Reconstruction
+> Theorem**: https://github.com/landervanpassel-design/reconstruction-theorem
+> Claims here that touch behaviour or AI are conceptual/analogical, not empirical results.
+
 # Protected Desire Equilibrium (PDE)
 
 **A Co-Evolutionary Framework for Safe Multi-Agent Superintelligence**
