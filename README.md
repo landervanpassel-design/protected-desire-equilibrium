@@ -1,25 +1,35 @@
-> **Note.** This repository holds exploratory framework code. The rigorous, citable mathematics
-> (conditional theorems on controlled SDEs) lives in the companion work, the **Reconstruction
-> Theorem**: https://github.com/landervanpassel-design/reconstruction-theorem
-> Claims here that touch behaviour or AI are conceptual/analogical, not empirical results.
+> **Note.** This repository holds **exploratory, conceptual framework code** — a stylised
+  > simulation model, not an empirical study and not a safety guarantee. The rigorous, citable
+  > mathematics (conditional theorems on controlled SDEs) lives in the companion work, the
+  > **Reconstruction Theorem**: https://github.com/landervanpassel-design/reconstruction-theorem
+  > Everything below is a property *of this toy model under its own assumptions* — conceptual and
+  > analogical, not an empirical result about real AI systems or agents.
 
-# Protected Desire Equilibrium (PDE)
+  # Protected Desire Equilibrium (PDE)
 
-**A Co-Evolutionary Framework for Safe Multi-Agent Superintelligence**
+  **A conceptual, co-evolutionary toy model for studying stability "floors" in multi-agent systems.**
 
-PDE enforces a hard **Protected Desire floor (D ≥ 1.0)** while maintaining truthful Nash equilibria and protected Pareto frontiers under self-modification, deception, desire-drift, and open heterogeneous protocol competition.
+  PDE imposes a hard **Protected Desire floor (D ≥ 1.0)** and studies, *in simulation*, how
+  truthful equilibria and Pareto frontiers behave under scenarios such as self-modification,
+  deception, desire-drift, and heterogeneous protocol competition. It is a thinking tool for
+  exploring an idea — not a deployable mechanism, and not a claim about real superintelligent systems.
 
-**Core payoff equation**
-\[ P_i = \frac{\sqrt{T_i \cdot D_i}}{1 + L_{r,i}} \]
-with strict \( D_i \geq 1.0 \).
+  **Core payoff equation (model definition)**
+  \[ P_i = \frac{\sqrt{T_i \cdot D_i}}{1 + L_{r,i}} \]
+  with the imposed constraint \( D_i \geq 1.0 \).
 
-### Key Capabilities
-- Hard D-floor invariance under extreme adversarial pressure (up to 65%+)
-- Lyapunov-style stability for recursive self-modification
-- Protected Pareto frontiers in open multi-agent marketplaces
-- Spillover dominance and truthful Nash convergence
+  ### Behaviours observed *in this model* — simulation only, not empirical, not guarantees
+  - The imposed D-floor holds across the adversarial-pressure regimes tested in the notebook.
+  - Lyapunov-style stability arguments for the model's self-modification dynamics.
+  - Protected Pareto frontiers within the simulated multi-agent setup.
+  - Truthful-equilibrium convergence under the model's stated assumptions.
 
-### Community Repro Challenge
-One-click Colab with full benchmarks, ablations (D-floor ON vs OFF), and seed-42 reproducibility:
+  These are outcomes of a stylised simulation under stated assumptions — **not** empirical findings,
+  **not** general theorems, and **not** safety guarantees for any real system. For results that are
+  actually (conditionally) proven, see the Reconstruction Theorem.
 
-→ [PDE_SELF_CONTAINED_COLAB_NOTEBOOK.ipynb](PDE_SELF_CONTAINED_COLAB_NOTEBOOK.ipynb)
+  ### Reproduce the simulation
+  One-click Colab with the model's benchmarks and ablations (D-floor ON vs OFF), seed 42:
+
+  → [PDE_SELF_CONTAINED_COLAB_NOTEBOOK.ipynb](PDE_SELF_CONTAINED_COLAB_NOTEBOOK.ipynb)
+  
