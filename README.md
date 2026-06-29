@@ -23,10 +23,3 @@ with strict \( D_i \geq 1.0 \).
 One-click Colab with full benchmarks, ablations (D-floor ON vs OFF), and seed-42 reproducibility:
 
 → [PDE_SELF_CONTAINED_COLAB_NOTEBOOK.ipynb](PDE_SELF_CONTAINED_COLAB_NOTEBOOK.ipynb)
-
-### Companion Repository
-Full philosophical and mathematical grounding (Unified Stability Ontology, RH reframing, prime-layer bridge, Big Top Tests):
-
-→ [Unified-Stability-Ontology](https://github.com/landervanpassel-design/Unified-Stability-Ontology)
-
-**License:** MIT — fully open for research, extension, and agentic use.
