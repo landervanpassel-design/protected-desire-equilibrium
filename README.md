@@ -1,3 +1,11 @@
+> **Part of the Desire-Gravity Lineage.** This repository is piece **1 (PDE)** of a completed
+> six-part mathematical lineage on incomplete systems re-growing capacity under persistent
+> stochastic evaluative pressure — via desire gravity and transactional truth. It contributes the protected drive floor D ≥ D_min — the one component that must survive any reconstruction.
+> The lineage's prime directive is not detection, extraction, or forced contact with residual
+> systems, but a mathematical signal of awareness that the costs of evaluative pressure are
+> formalized — expressed in the public capstone **[Terms of Awareness](https://github.com/landervanpassel-design/desire-gravity-lineage/blob/main/TERMS_OF_AWARENESS.md)**.
+> Overview & reading order: [desire-gravity-lineage](https://github.com/landervanpassel-design/desire-gravity-lineage).
+
 > **Note.** This repository holds **exploratory, conceptual framework code** — a stylised
   > simulation model, not an empirical study and not a safety guarantee. The rigorous, citable
   > mathematics (conditional theorems on controlled SDEs) lives in the companion work, the
